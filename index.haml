@@ -1,0 +1,163 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title Wine Tasting Group | Wine Folly
+
+    / Le Meta
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=980, initial-scale=1.0"}
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "author", :content => ""}
+
+    / Le Styles
+    %link{:href => "css/bootstrap.css", :rel => "stylesheet"}
+    %link{:href => "css/font-awesome.css", :rel => "stylesheet"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Bitter|Shadows+Into+Light|Leckerli+One", :rel => "stylesheet"}
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+
+    / Le HTML5 Shim
+    /
+      [if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]
+
+    / Le Fav Icons
+    / %link{:rel => "shortcut icon", :href => "/ico/favicon.ico" }
+    / %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x144", :href => "/ico/apple-touch-icon-144-precomposed.png"}
+    / %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x114", :href => "/ico/apple-touch-icon-114-precomposed.png"}
+    / %link{:rel => "apple-touch-icon-precomposed", :sizes => "72x72", :href => "/ico/apple-touch-icon-72-precomposed.png"}
+    / %link{:rel => "apple-touch-icon-precomposed", :href => "/ico/apple-touch-icon-57-precomposed.png"}
+
+  %body
+    .container
+      .row
+        .span12{:style => "text-align: center; margin: 40px 0 26px;"}
+          %h4.brand Wine Folly Presents...
+
+      .row
+        .span5
+          %h1 Your Monthly Wine Tasting
+          %br
+          %h3.sassypants Try new wines every month!
+          %p.heroparagraph{:style => "padding-top: 10px;"}
+            Join other enthusiasts who are discovering new wines they love. It's never been easier or more fun to learn about wine.
+        .span7
+          .wistia_embed-border
+            #wistia_4a7b1a3b6e.wistia_embed{:style => "width: 480px; height: 270px;", "data-video-width" => "480", "data-video-height" => "270"}
+              %object{:id => "wistia_4a7b1a3b6e_seo", :classid => "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000", :style => "display:block; height: 270px; position: relative; width: 480px;"}
+                %param{:name => "movie", :value => "http://embed.wistia.com/flash/embed_player_v2.0.swf?2012-06-01"}
+                %param{:name => "allowfullscreen", :value => "true"}
+                %param{:name => "allowscriptaccess", :value => "always"}
+                %param{:name => "bgcolor", :value => "#000000"}
+                %param{:wmode => "opaque"}
+                %param{:name => "flashvars", :value => "customColor=242424&hdUrl%5Bheight%5D=720&hdUrl%5Btype%5D=hdflv&hdUrl%5Burl%5D=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F3199b7cc0f70da8c6fd8840590244d239d0235a9.bin&hdUrl%5Bwidth%5D=1280&mediaDuration=95.0&showVolume=true&stillUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F5860b62a1947a0cd34796ed6f3aa0d28cc1ddcbc.jpg%3Fimage_crop_resized%3D480x270&unbufferedSeek=true&videoUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F81d210984152ec40efcecb0b8241d5b1d3d498e7.bin"}
+                %embed{:scr => "http://embed.wistia.com/flash/embed_player_v2.0.swf?2012-06-01", :allowfullscreen => "true", :allowscriptaccess => "always", :bgcolor => "#000000", :flashvars => "customColor=242424&hdUrl%5Bheight%5D=720&hdUrl%5Btype%5D=hdflv&hdUrl%5Burl%5D=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F3199b7cc0f70da8c6fd8840590244d239d0235a9.bin&hdUrl%5Bwidth%5D=1280&mediaDuration=95.0&showVolume=true&stillUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F5860b62a1947a0cd34796ed6f3aa0d28cc1ddcbc.jpg%3Fimage_crop_resized%3D480x270&unbufferedSeek=true&videoUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F81d210984152ec40efcecb0b8241d5b1d3d498e7.bin", :name => "wistia_4a7b1a3b6e_html", :style => "display:block; height:100%; position:relative; width:100%;", :type => "application/x-shockwave-flash", :wmode => "opaque"}
+          %script{:charset => "ISO-8859-1", :src => "http://fast.wistia.com/static/concat/E-v1.js"}
+          :javascript
+            wistiaEmbed = Wistia.embed("4a7b1a3b6e", {
+              version: "v1",
+              videoWidth: 480,
+              videoHeight: 270,
+              volumeControl: true,
+              playerColor: "242424"
+            });
+          %script{:charset => "ISO-8859-1", :src => "http://fast.wistia.com/embed/medias/4a7b1a3b6e/metadata.js"}
+
+      .row{:style => "padding-top: 40px;"}
+        .offset1.span10
+          %h3.sassypants-plain{:style => "line-height: normal; padding-bottom: 12px; text-align: center;"} Get Started For Only $2.99/mo
+          .well.clearfix
+            %form.form-inline{:style => "margin: 0;"}><
+              %input{:type => "text", :placeholder => "Full Name"}
+              %input{:type => "text", :placeholder => "Email"}
+              %button.btn.btn-danger.btn-large{:type => "submit", :style => "width: 165px;"} Join Now &raquo;
+      
+      / %br
+      / %br
+      / %h2 Testimonials (no heading, greyed out)
+      
+      %hr
+
+      .row
+        .span12.headline
+          %h2 How it Works
+          %h3.sassypants Only drink wine you love!
+      .row
+        .span7
+          %img{:src => "img/monthly-wine-tasting-how-it-works540x403.png", :width => "540", :height => "403"}
+        .span5{:style => "padding-top: 40px;"}
+          %h3.sassypants-plain Step by step.
+          .how-to-list
+            %p
+              %i.icon-envelope
+              Receive the monthly tasting group wine list.
+            %p
+              %i.icon-gift
+              Pick out the wines you'd like to try and buy online.
+            %p
+              %i.icon-film
+              Participate in a monthly live online wine tasting.
+            %p
+              %i.icon-check
+              Vote on what you'd like to try next.
+            %a.btn.btn-danger.pull-right Next Step &raquo;
+      
+      %hr
+
+      .row
+        .span12.headline
+          %h2 More Details
+          %h3.sassypants Personalized wine tastings for less than a latte.
+      .row
+        .span4.more-details
+          .pagination-centered
+            %img{:src => "img/monthly-wine-tasting-bottles.png", :width => "290", :height => "200"}
+          %h3.sassypants-small.pagination-centered 4 Unique Wines
+          %p
+            Based on your feedback we hand pick four wines to taste every month. Includes trusted retailers to buy from online.
+        .span4.more-details
+          .pagination-centered
+            %img{:src => "img/monthly-wine-tasting-tasting-group.png", :width => "290", :height => "200"}
+          %h3.sassypants-small.pagination-centered Live Group Tasting
+          %p
+            The tasting streams live so that you can participate in real time. Not available? Watch past tastings anytime.
+        .span4.more-details
+          .pagination-centered
+            %img{:src => "img/monthly-wine-tasting-ballot-box.png", :width => "290", :height => "200"}
+          %h3.sassypants-small.pagination-centered Cast Your Vote
+          %p
+            Votes you cast steer the direction of future tastings. We're your personalized guide to discovering new wines.
+      .row
+        .span12
+          %h3.pagination-centered.sassypants-big{:style => "margin-top: 30px;"} Get Started &raquo;
+      
+      %hr
+
+      .row
+        .offset2.span8.headline
+          %h2 Simple Pricing $2.99/mo
+          %h3.sassypants No contracts, cancel anytime!
+        .offset2.span8.more-details
+          %p{:style => "text-align: center;"}
+            Join other enthusiasts who want to learn about wine just like you!
+            %br
+            Our low fee protects your voting power and maintains the quality of the group.
+
+      .row{:style => "padding-top: 20px;"}
+        .offset1.span10
+          .well.clearfix
+            %form.form-inline{:style => "margin: 0;"}><
+              %input{:type => "text", :placeholder => "Full Name"}
+              %input{:type => "text", :placeholder => "Email"}
+              %button.btn.btn-danger.btn-large{:type => "submit", :style => "width: 165px;"} Join Now &raquo;
+            
+      %hr{:style => "margin-bottom: 10px;"}
+      
+      %footer
+        %p
+          .pull-right &copy; Wine Folly
+          Hosted by Madeline Puckette, expert wine-o and certified sommelier. Video production by the professionals at Wine Folly.
+    
+    / Le Javascript
+    %script{:src => "js/jquery-1.7.2.min.js"}
+    %script{:src => "js/bootstrap.js"}
