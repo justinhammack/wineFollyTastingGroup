@@ -34,6 +34,7 @@
         .span12{:style => "text-align: center; margin: 40px 0 26px;"}
           %h4.brand Wine Folly Presents...
 
+      /** Hero Container
       .row
         .span5
           %h1 Your Monthly Wine Tasting
@@ -63,6 +64,7 @@
             });
           %script{:charset => "ISO-8859-1", :src => "http://fast.wistia.com/embed/medias/4a7b1a3b6e/metadata.js"}
 
+      /** Primary CTA Form
       .row{:style => "padding-top: 40px;"}
         .offset1.span10
           %h3.sassypants-plain{:style => "line-height: normal; padding-bottom: 12px; text-align: center;"} Get Started For Only $2.99/mo
@@ -72,12 +74,16 @@
               %input{:type => "text", :placeholder => "Email"}
               %button.btn.btn-danger.btn-large{:type => "submit", :style => "width: 165px;"} Join Now &raquo;
       
-      / %br
-      / %br
-      / %h2 Testimonials (no heading, greyed out)
-      
+      /** Limited Seating Available
+      .row
+        .span12
+          %h4
+            Seating is limited. Only 99 spots remaining.
+            %i.icon-comment-alt
+
       %hr
 
+      /** How it Works
       .row
         .span12.headline
           %h2 How it Works
@@ -104,6 +110,7 @@
       
       %hr
 
+      /** More Details
       .row
         .span12.headline
           %h2 More Details
@@ -114,7 +121,7 @@
             %img{:src => "img/monthly-wine-tasting-bottles.png", :width => "290", :height => "200"}
           %h3.sassypants-small.pagination-centered 4 Unique Wines
           %p
-            Based on your feedback we hand pick four wines to taste every month. Includes trusted retailers to buy from online.
+            Based on your feedback we hand pick four wines for the group which you can buy from trusted online retailers.
         .span4.more-details
           .pagination-centered
             %img{:src => "img/monthly-wine-tasting-tasting-group.png", :width => "290", :height => "200"}
@@ -126,13 +133,27 @@
             %img{:src => "img/monthly-wine-tasting-ballot-box.png", :width => "290", :height => "200"}
           %h3.sassypants-small.pagination-centered Cast Your Vote
           %p
-            Votes you cast steer the direction of future tastings. We're your personalized guide to discovering new wines.
+            Votes you cast steer the direction of future tastings. We're your personalized guide to navigtating the wine world.
       .row
         .span12
           %h3.pagination-centered.sassypants-big{:style => "margin-top: 30px;"} Get Started &raquo;
       
-      %hr
+      /** Testimonials
+      .row
+        .span5.testimonial
+          "It's a little like Wes Anderson meets Gary Vaynerchuck."
+          %br
+          %small
+            %i.pull-right - Benjamin Simons, Alexandria Nicole Cellars
+        .offset2.span5.testimonial
+          "Your guide to drinking wine, pop culture and the business of the vine. "
+          %br
+          %small
+            %i.pull-right - @WineDiggs
 
+      %hr{:style => "margin-top: 30px;"}
+
+      /** Pricing Details
       .row
         .offset2.span8.headline
           %h2 Simple Pricing $2.99/mo
@@ -143,6 +164,7 @@
             %br
             Our low fee protects your voting power and maintains the quality of the group.
 
+      /** Form CTA Final Bottom
       .row{:style => "padding-top: 20px;"}
         .offset1.span10
           .well.clearfix
