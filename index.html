@@ -10,7 +10,7 @@
     <!-- Le Styles -->
     <link href='css/bootstrap.css' rel='stylesheet'>
     <link href='css/font-awesome.css' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Bitter|Shadows+Into+Light|Leckerli+One' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter|Shadows+Into+Light' rel='stylesheet'>
     <link href='css/style.css' rel='stylesheet'>
     <!-- Le HTML5 Shim -->
     <!--
@@ -19,7 +19,7 @@
       <![endif]
     -->
     <!-- Le Fav Icons -->
-    <!-- %link{:rel => "shortcut icon", :href => "/ico/favicon.ico" } -->
+    <link href='./favicon.ico' rel='shortcut icon'>
     <!-- %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x144", :href => "/ico/apple-touch-icon-144-precomposed.png"} -->
     <!-- %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x114", :href => "/ico/apple-touch-icon-114-precomposed.png"} -->
     <!-- %link{:rel => "apple-touch-icon-precomposed", :sizes => "72x72", :href => "/ico/apple-touch-icon-72-precomposed.png"} -->
@@ -27,13 +27,11 @@
   </head>
   <body>
     <div class='container'>
-      <div class='row'>
-        <div class='span12' style='text-align: center; margin: 40px 0 26px;'>
-          <h4 class='brand'>Wine Folly Presents...</h4>
-        </div>
-      </div>
+      <!-- .row -->
+      <!-- .span12{:style => "text-align: center; margin: 40px 0 26px;"} -->
+      <!-- %h4.brand Wine Folly Presents... -->
       <!-- ** Hero Container -->
-      <div class='row'>
+      <div class='row' style='margin-top: 60px;'>
         <div class='span5'>
           <h1>Your Monthly Wine Tasting</h1>
           <br>
@@ -81,86 +79,13 @@
         </div>
       </div>
       <!-- ** Limited Seating Available -->
-      <div class='row'>
+      <div class='row divider-bottom'>
         <div class='span12'>
-          <h4>Only 99 Seats Available</h4>
-        </div>
-      </div>
-      <hr>
-      <!-- ** How it Works -->
-      <div class='row'>
-        <div class='span12 headline'>
-          <h2>How it Works</h2>
-          <h3 class='sassypants'>Only drink wine you love!</h3>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='span7'>
-          <img height='403' src='img/monthly-wine-tasting-how-it-works540x403.png' width='540'>
-        </div>
-        <div class='span5' style='padding-top: 40px;'>
-          <h3 class='sassypants-plain'>Step by step.</h3>
-          <div class='how-to-list'>
-            <p>
-              <i class='icon-envelope'></i>
-              Receive the monthly tasting group wine list.
-            </p>
-            <p>
-              <i class='icon-gift'></i>
-              Pick out the wines you'd like to try and buy online.
-            </p>
-            <p>
-              <i class='icon-film'></i>
-              Participate in a monthly live online wine tasting.
-            </p>
-            <p>
-              <i class='icon-check'></i>
-              Vote on what you'd like to try next.
-            </p>
-            <a class='btn btn-danger pull-right'>Next Step &raquo;</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <!-- ** More Details -->
-      <div class='row'>
-        <div class='span12 headline'>
-          <h2>More Details</h2>
-          <h3 class='sassypants'>Personalized wine tastings for less than a latte.</h3>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='span4 more-details'>
-          <div class='pagination-centered'>
-            <img height='200' src='img/monthly-wine-tasting-bottles.png' width='290'>
-          </div>
-          <h3 class='sassypants-small pagination-centered'>4 Unique Wines</h3>
-          <p>
-            Based on your feedback we hand pick four wines for the group which you can buy from trusted online retailers.
-          </p>
-        </div>
-        <div class='span4 more-details'>
-          <div class='pagination-centered'>
-            <img height='200' src='img/monthly-wine-tasting-tasting-group.png' width='290'>
-          </div>
-          <h3 class='sassypants-small pagination-centered'>Live Group Tasting</h3>
-          <p>
-            The tasting streams live so that you can participate in real time. Not available? Watch past tastings anytime.
-          </p>
-        </div>
-        <div class='span4 more-details'>
-          <div class='pagination-centered'>
-            <img height='200' src='img/monthly-wine-tasting-ballot-box.png' width='290'>
-          </div>
-          <h3 class='sassypants-small pagination-centered'>Cast Your Vote</h3>
-          <p>
-            Votes you cast steer the direction of future tastings. We're your personalized guide to navigtating the wine world.
-          </p>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='span12'>
-          <h3 class='pagination-centered sassypants-big' style='margin-top: 30px;'>Get Started &raquo;</h3>
+          <h3 class='pagination-centered limited-seating'>
+            Limited Seating:
+            <a data-content='For quality puposes and to guarantee the availability of the wines we have a membership cap.' href='#' rel='popover' style='color: #bd362f;' title='Exclusive Access'>Open Enrollment</a>
+            <!-- %i.icon-info-sign{:rel => "popover", "data-content" => "content", :title => "title"} -->
+          </h3>
         </div>
       </div>
       <!-- ** Testimonials -->
@@ -180,30 +105,111 @@
           </small>
         </div>
       </div>
-      <hr style='margin-top: 30px;'>
-      <!-- ** Pricing Details -->
-      <div class='row'>
-        <div class='offset2 span8 headline'>
-          <h2>Simple Pricing $2.99/mo</h2>
-          <h3 class='sassypants'>No contracts, cancel anytime!</h3>
+      <!-- ** How it Works -->
+      <div class='row divider-top'>
+        <div class='span12 headline'>
+          <h2>How it Works</h2>
+          <h3 class='sassypants'>Only drink wine you love!</h3>
         </div>
-        <div class='offset2 span8 more-details'>
+      </div>
+      <div class='row' style='margin-top: 40px; margin-bottom: 40px;'>
+        <div class='span7'>
+          <img height='403' src='img/monthly-wine-tasting-how-it-works540x403.png' width='540'>
+        </div>
+        <div class='span5' style='padding-top: 40px;'>
+          <h3 class='sassypants-plain'>Step by step.</h3>
+          <div class='how-to-list'>
+            <p>
+              <i class='icon-envelope'></i>
+              Receive the monthly tasting group wine list.
+            </p>
+            <p>
+              <i class='icon-gift'></i>
+              Pick out wines you'd like to try and buy online.
+            </p>
+            <p>
+              <i class='icon-film'></i>
+              Participate in a monthly live online wine tasting.
+            </p>
+            <p>
+              <i class='icon-check'></i>
+              Vote on what you'd like to try next.
+            </p>
+            <a class='btn btn-danger pull-right'>Next Step &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <div class='row divider-bottom'>
+        <div class='span12'></div>
+      </div>
+      <!-- ** Trusted Retailers -->
+      <div class='row'>
+        <div class='span12 pagination-centered trusted-retailers'>
+          <h3>Wine Retailers</h3>
+        </div>
+      </div>
+      <!-- ** More Details -->
+      <div class='row divider-top' style='margin-top: 150px;'>
+        <div class='span12 headline'>
+          <h2>More Details</h2>
+          <h3 class='sassypants'>Personalized wine tastings for less than a latte.</h3>
+        </div>
+      </div>
+      <div class='row' style='margin-top: 60px;'>
+        <div class='span6 more-details'>
+          <h3>4 Unique Wines</h3>
+          <p>
+            Based on your feedback our staff hand picks four wines for you through our network of trusted online retailers.
+          </p>
+        </div>
+        <div class='span6 pagination-centered'>
+          <img height='200' src='img/monthly-wine-tasting-bottles.png' width='290'>
+        </div>
+      </div>
+      <div class='row' style='margin-top: 60px;'>
+        <div class='span6 pagination-centered'>
+          <img height='200' src='img/monthly-wine-tasting-tasting-group.png' width='290'>
+        </div>
+        <div class='span6 more-details'>
+          <h3>Expert Wine Tasting</h3>
+          <p>
+            Participate in real time with an expert during our streaming online wine tastings. Watch past tastings anytime.
+          </p>
+        </div>
+      </div>
+      <div class='row' style='margin-top: 60px;'>
+        <div class='span6 more-details'>
+          <h3>Cast Your Vote</h3>
+          <p>
+            Submit your vote to direct the course of future tastings. Your personalized guide to navigtating the wine world.
+          </p>
+        </div>
+        <div class='span6 pagination-centered'>
+          <img height='200' src='img/monthly-wine-tasting-ballot-box.png' width='290'>
+        </div>
+      </div>
+      <!-- ** Pricing Details -->
+      <div class='row' style='margin-top: 65px;'>
+        <div class='offset2 span8 pagination-centered'>
+          <h3>Simple Pricing</h3>
+          <h3 class='sassypants'>$2.99/mo, no contracts, cancel anytime!</h3>
+        </div>
+        <div class='offset2 span8 more-details' style='padding-top: 20px; padding-bottom: 15px;'>
           <p style='text-align: center;'>
             Join other enthusiasts who want to learn about wine just like you!
             <br>
-            Our low fee protects your voting power and maintains the quality of the group.
+            Subscribers have access to special offers, discounts, and voting powers.
           </p>
         </div>
       </div>
       <!-- ** Form CTA Final Bottom -->
-      <div class='row' style='padding-top: 20px;'>
+      <div class='row divider-bottom' style='padding-top: 20px;'>
         <div class='offset1 span10'>
           <div class='well clearfix'><form class='form-inline' style='margin: 0;'><input placeholder='Full Name' type='text'>
             <input placeholder='Email' type='text'>
             <button class='btn btn-danger btn-large' style='width: 165px;' type='submit'>Join Now &raquo;</button></form></div>
         </div>
       </div>
-      <hr style='margin-bottom: 10px;'>
       <footer>
         <p>
           <div class='pull-right'>&copy; Wine Folly</div>
@@ -214,5 +220,14 @@
     <!-- Le Javascript -->
     <script src='js/jquery-1.7.2.min.js'></script>
     <script src='js/bootstrap.js'></script>
+    <script>
+      //<![CDATA[
+        $(document).ready(function() {
+          $("a[rel=popover]").popover().click(function(e) {
+            e.preventDefault();
+          });
+        });
+      //]]>
+    </script>
   </body>
 </html>

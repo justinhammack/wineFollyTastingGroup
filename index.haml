@@ -12,7 +12,7 @@
     / Le Styles
     %link{:href => "css/bootstrap.css", :rel => "stylesheet"}
     %link{:href => "css/font-awesome.css", :rel => "stylesheet"}
-    %link{:href => "http://fonts.googleapis.com/css?family=Bitter|Shadows+Into+Light|Leckerli+One", :rel => "stylesheet"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Bitter|Shadows+Into+Light", :rel => "stylesheet"}
     %link{:href => "css/style.css", :rel => "stylesheet"}
 
     / Le HTML5 Shim
@@ -22,7 +22,7 @@
       <![endif]
 
     / Le Fav Icons
-    / %link{:rel => "shortcut icon", :href => "/ico/favicon.ico" }
+    %link{:rel => "shortcut icon", :href => "./favicon.ico" }
     / %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x144", :href => "/ico/apple-touch-icon-144-precomposed.png"}
     / %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x114", :href => "/ico/apple-touch-icon-114-precomposed.png"}
     / %link{:rel => "apple-touch-icon-precomposed", :sizes => "72x72", :href => "/ico/apple-touch-icon-72-precomposed.png"}
@@ -30,12 +30,12 @@
 
   %body
     .container
-      .row
-        .span12{:style => "text-align: center; margin: 40px 0 26px;"}
-          %h4.brand Wine Folly Presents...
+      / .row
+      /   .span12{:style => "text-align: center; margin: 40px 0 26px;"}
+      /     %h4.brand Wine Folly Presents...
 
       /** Hero Container
-      .row
+      .row{:style => "margin-top: 60px;"}
         .span5
           %h1 Your Monthly Wine Tasting
           %br
@@ -73,72 +73,20 @@
               %input{:type => "text", :placeholder => "Full Name"}
               %input{:type => "text", :placeholder => "Email"}
               %button.btn.btn-danger.btn-large{:type => "submit", :style => "width: 165px;"} Join Now &raquo;
-      
+
       /** Limited Seating Available
-      .row
+      .row.divider-bottom
         .span12
-          %h4
-            Seating is limited. Only 99 spots remaining.
-            %i.icon-comment-alt
+          %h3.pagination-centered.limited-seating
+            Limited Seating:
+            %a{:rel => "popover", 
+              "data-content" => "For quality puposes and to guarantee the availability of the wines we have a membership cap.", 
+              :title => "Exclusive Access", 
+              :href => "#", 
+              :style => "color: #bd362f;"} Open Enrollment
+            / %i.icon-info-sign{:rel => "popover", "data-content" => "content", :title => "title"}
 
-      %hr
-
-      /** How it Works
-      .row
-        .span12.headline
-          %h2 How it Works
-          %h3.sassypants Only drink wine you love!
-      .row
-        .span7
-          %img{:src => "img/monthly-wine-tasting-how-it-works540x403.png", :width => "540", :height => "403"}
-        .span5{:style => "padding-top: 40px;"}
-          %h3.sassypants-plain Step by step.
-          .how-to-list
-            %p
-              %i.icon-envelope
-              Receive the monthly tasting group wine list.
-            %p
-              %i.icon-gift
-              Pick out the wines you'd like to try and buy online.
-            %p
-              %i.icon-film
-              Participate in a monthly live online wine tasting.
-            %p
-              %i.icon-check
-              Vote on what you'd like to try next.
-            %a.btn.btn-danger.pull-right Next Step &raquo;
-      
-      %hr
-
-      /** More Details
-      .row
-        .span12.headline
-          %h2 More Details
-          %h3.sassypants Personalized wine tastings for less than a latte.
-      .row
-        .span4.more-details
-          .pagination-centered
-            %img{:src => "img/monthly-wine-tasting-bottles.png", :width => "290", :height => "200"}
-          %h3.sassypants-small.pagination-centered 4 Unique Wines
-          %p
-            Based on your feedback we hand pick four wines for the group which you can buy from trusted online retailers.
-        .span4.more-details
-          .pagination-centered
-            %img{:src => "img/monthly-wine-tasting-tasting-group.png", :width => "290", :height => "200"}
-          %h3.sassypants-small.pagination-centered Live Group Tasting
-          %p
-            The tasting streams live so that you can participate in real time. Not available? Watch past tastings anytime.
-        .span4.more-details
-          .pagination-centered
-            %img{:src => "img/monthly-wine-tasting-ballot-box.png", :width => "290", :height => "200"}
-          %h3.sassypants-small.pagination-centered Cast Your Vote
-          %p
-            Votes you cast steer the direction of future tastings. We're your personalized guide to navigtating the wine world.
-      .row
-        .span12
-          %h3.pagination-centered.sassypants-big{:style => "margin-top: 30px;"} Get Started &raquo;
-      
-      /** Testimonials
+      /** Testimonials    
       .row
         .span5.testimonial
           "It's a little like Wes Anderson meets Gary Vaynerchuck."
@@ -151,21 +99,79 @@
           %small
             %i.pull-right - @WineDiggs
 
-      %hr{:style => "margin-top: 30px;"}
+      /** How it Works
+      .row.divider-top
+        .span12.headline
+          %h2 How it Works
+          %h3.sassypants Only drink wine you love!
+      .row{:style => "margin-top: 40px; margin-bottom: 40px;"}
+        .span7
+          %img{:src => "img/monthly-wine-tasting-how-it-works540x403.png", :width => "540", :height => "403"}
+        .span5{:style => "padding-top: 40px;"}
+          %h3.sassypants-plain Step by step.
+          .how-to-list
+            %p
+              %i.icon-envelope
+              Receive the monthly tasting group wine list.
+            %p
+              %i.icon-gift
+              Pick out wines you'd like to try and buy online.
+            %p
+              %i.icon-film
+              Participate in a monthly live online wine tasting.
+            %p
+              %i.icon-check
+              Vote on what you'd like to try next.
+            %a.btn.btn-danger.pull-right Next Step &raquo;
+      
+      .row.divider-bottom
+        .span12
+      
+      /** Trusted Retailers
+      .row
+        .span12.pagination-centered.trusted-retailers
+          %h3 Wine Retailers
+
+      /** More Details
+      .row.divider-top{:style => "margin-top: 150px;"}
+        .span12.headline
+          %h2 More Details
+          %h3.sassypants Personalized wine tastings for less than a latte.
+      .row{:style => "margin-top: 60px;"}
+        .span6.more-details
+          %h3 4 Unique Wines
+          %p
+            Based on your feedback our staff hand picks four wines for you through our network of trusted online retailers.
+        .span6.pagination-centered
+          %img{:src => "img/monthly-wine-tasting-bottles.png", :width => "290", :height => "200"} 
+      .row{:style => "margin-top: 60px;"}
+        .span6.pagination-centered
+          %img{:src => "img/monthly-wine-tasting-tasting-group.png", :width => "290", :height => "200"}
+        .span6.more-details
+          %h3 Expert Wine Tasting
+          %p
+            Participate in real time with an expert during our streaming online wine tastings. Watch past tastings anytime.
+      .row{:style => "margin-top: 60px;"}
+        .span6.more-details
+          %h3 Cast Your Vote
+          %p
+            Submit your vote to direct the course of future tastings. Your personalized guide to navigtating the wine world.
+        .span6.pagination-centered
+          %img{:src => "img/monthly-wine-tasting-ballot-box.png", :width => "290", :height => "200"}
 
       /** Pricing Details
-      .row
-        .offset2.span8.headline
-          %h2 Simple Pricing $2.99/mo
-          %h3.sassypants No contracts, cancel anytime!
-        .offset2.span8.more-details
+      .row{:style => "margin-top: 65px;"}
+        .offset2.span8.pagination-centered
+          %h3 Simple Pricing 
+          %h3.sassypants $2.99/mo, no contracts, cancel anytime!
+        .offset2.span8.more-details{:style => "padding-top: 20px; padding-bottom: 15px;"}
           %p{:style => "text-align: center;"}
             Join other enthusiasts who want to learn about wine just like you!
             %br
-            Our low fee protects your voting power and maintains the quality of the group.
+            Subscribers have access to special offers, discounts, and voting powers.
 
       /** Form CTA Final Bottom
-      .row{:style => "padding-top: 20px;"}
+      .row.divider-bottom{:style => "padding-top: 20px;"}
         .offset1.span10
           .well.clearfix
             %form.form-inline{:style => "margin: 0;"}><
@@ -173,8 +179,6 @@
               %input{:type => "text", :placeholder => "Email"}
               %button.btn.btn-danger.btn-large{:type => "submit", :style => "width: 165px;"} Join Now &raquo;
             
-      %hr{:style => "margin-bottom: 10px;"}
-      
       %footer
         %p
           .pull-right &copy; Wine Folly
@@ -183,3 +187,9 @@
     / Le Javascript
     %script{:src => "js/jquery-1.7.2.min.js"}
     %script{:src => "js/bootstrap.js"}
+    :javascript
+      $(document).ready(function() {
+        $("a[rel=popover]").popover().click(function(e) {
+          e.preventDefault();
+        });
+      });
